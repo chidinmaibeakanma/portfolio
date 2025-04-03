@@ -38,7 +38,7 @@ const portfolioItems = [
     {
         id: 6,
         title: 'Hers - Restaurant Branding Project',
-        images: ['images/HERS MOCKUP/111.png', 'images/HERS MOCKUP/112.png', 'images/HERS MOCKUP/113.png', 'images/HERS MOCKUP/114.png', 'images/HERS MOCKUP/115.png', 'images/HERS MOCKUP/116.png', 'images/HERS MOCKUP/117.png', 'images/HERS MOCKUP/118.png', 'images/HERS MOCKUP/119.png'],
+        images: ['images/HERS MOCKUP/111.png', 'images/HERS MOCKUP/112.png', 'images/HERS MOCKUP/113.png', 'images/HERS MOCKUP/114.jpg', 'images/HERS MOCKUP/115.jpg', 'images/HERS MOCKUP/116.jpg', 'images/HERS MOCKUP/117.jpg', 'images/HERS MOCKUP/118.jpg', 'images/HERS MOCKUP/119.png'],
         currentImageIndex: 0,
         description: '<p>The branding for Hers restaurant was designed to reflect an inviting and contemporary dining experience with a focus on elegance and sophistication. The goal was to create a visual identity that resonates with modern diners while emphasizing the warmth and personalization of the dining experience.</p><p>The design process began with exploring names and visuals that conveyed strength and a refined atmosphere. The final wordmark was crafted to be simple yet distinctive, using elegant typography to represent the restaurant\'s identity.</p><p>A refined color palette, combined with sleek and minimalistic design elements, was chosen to evoke feelings of luxury and intimacy. The branding was extended to the menu design and other brand elements, ensuring a consistent and memorable guest experience from the moment they view the logo to when they enjoy their meal.</p>'
     },
