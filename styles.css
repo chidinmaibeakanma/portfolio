@@ -2,6 +2,7 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
+    color: #000000;
 }
 
 section {
@@ -13,6 +14,7 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
+    background-color: #F5F5F5;
 }
 
 .home-text {
@@ -20,14 +22,14 @@ section {
 }
 
 .hello-text {
-    color: #666;
+    color: #717174;
     font-size: 1.5rem;
     margin-bottom: 10px;
     font-weight: 400;
 }
 
 .name-text {
-    color: #ffd700;
+    color: #0078AE;
     font-size: 4rem;
     font-weight: 700;
     margin-bottom: 20px;
@@ -77,6 +79,7 @@ section {
 /* Navigation */
 .navbar {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #F5F5F5 !important;
 }
 
 .navbar-brand {
@@ -85,6 +88,7 @@ section {
     display: flex;
     align-items: center;
     gap: 10px;
+    color: #000000 !important;
 }
 
 .logo-img {
@@ -101,7 +105,20 @@ section {
     transform: scale(1.1);
 }
 
+.nav-link {
+    color: #000000 !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #0078AE !important;
+}
+
 /* Portfolio Section */
+#portfolio {
+    background-color: #F5F5F5;
+}
+
 .portfolio-item {
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -109,6 +126,7 @@ section {
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     position: relative;
+    background-color: white;
 }
 
 .portfolio-item:hover {
@@ -128,7 +146,7 @@ section {
     left: 0;
     width: 100%;
     height: 300px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 61, 91, 0.85);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -152,12 +170,12 @@ section {
     padding: 10px 20px;
     border: 2px solid white;
     border-radius: 25px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 120, 174, 0.3);
     transition: all 0.3s ease;
 }
 
 .portfolio-item:hover .view-text {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 120, 174, 0.5);
     transform: scale(1.1);
 }
 
@@ -170,13 +188,13 @@ section {
 /* About Section */
 .about-text {
     padding: 30px;
-    background-color: #f8f9fa;
+    background-color: #F5F5F5;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
 .about-title {
-    color: #333;
+    color: #000000;
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 25px;
@@ -191,12 +209,12 @@ section {
     left: 0;
     width: 60px;
     height: 3px;
-    background-color: #ffd700;
+    background-color: #0078AE;
     border-radius: 2px;
 }
 
 .about-description {
-    color: #555;
+    color: #717174;
     font-size: 1.1rem;
     line-height: 1.8;
     margin-bottom: 0;
@@ -253,15 +271,15 @@ section {
 
 /* Contact Form */
 .form-control {
-    border-radius: 4px;
-    border: 1px solid #ddd;
+    border: 1px solid #D5CFCD;
     padding: 12px;
     margin-bottom: 20px;
+    background-color: #F5F5F5;
 }
 
 .form-control:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.25);
+    border-color: #0078AE;
+    box-shadow: 0 0 0 0.2rem rgba(0, 120, 174, 0.25);
 }
 
 textarea.form-control {
@@ -269,19 +287,28 @@ textarea.form-control {
 }
 
 .btn-primary {
+    background-color: #0078AE;
+    border-color: #0078AE;
     padding: 12px 30px;
     border-radius: 4px;
     font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #003D5B;
+    border-color: #003D5B;
+    transform: translateY(-2px);
 }
 
 /* Modal Styles */
 .modal-content {
-    border-radius: 8px;
+    background-color: #F5F5F5;
+    border-radius: 15px;
 }
 
 .modal-header {
-    border-bottom: none;
-    padding: 20px;
+    border-bottom: 1px solid #D5CFCD;
 }
 
 .modal-body {
@@ -310,7 +337,8 @@ textarea.form-control {
 
 /* Navigation buttons in modal */
 #prevImage, #nextImage {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(245, 245, 245, 0.9);
+    color: #000000;
     border: none;
     width: 50px;
     height: 50px;
@@ -325,16 +353,11 @@ textarea.form-control {
 
 #prevImage i, #nextImage i {
     font-size: 2rem;
-    color: #333;
 }
 
 #prevImage:hover, #nextImage:hover {
-    background-color: #fff;
-    transform: scale(1.1);
-}
-
-#prevImage:hover i, #nextImage:hover i {
-    color: #007bff;
+    background-color: #0078AE;
+    color: #F5F5F5;
 }
 
 /* Responsive Adjustments */
@@ -354,18 +377,19 @@ textarea.form-control {
 
 /* Footer */
 .footer {
-    background-color: #f8f9fa;
-    border-top: 1px solid #dee2e6;
+    background-color: #000000;
+    color: #F5F5F5;
+    border-top: none;
 }
 
 .footer h5 {
-    color: #333;
+    color: #F5F5F5;
     font-weight: 600;
     margin-bottom: 1.5rem;
 }
 
 .footer p {
-    color: #666;
+    color: #D5CFCD;
 }
 
 .footer .social-links {
@@ -373,13 +397,13 @@ textarea.form-control {
 }
 
 .footer .social-links a {
-    color: #666;
+    color: #F5F5F5;
     font-size: 1.5rem;
     transition: color 0.3s ease;
 }
 
 .footer .social-links a:hover {
-    color: #007bff;
+    color: #0078AE;
 }
 
 .footer ul li {
@@ -387,18 +411,19 @@ textarea.form-control {
 }
 
 .footer ul li a {
-    color: #666;
+    color: #D5CFCD;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer ul li a:hover {
-    color: #007bff;
+    color: #0078AE;
     text-decoration: none;
 }
 
 .footer hr {
-    background-color: #dee2e6;
+    background-color: #717174;
+    opacity: 0.2;
 }
 
 @media (max-width: 768px) {
